@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Adfffh</title>
+</head>
+<body>
+    I am following this amazing guide to display two lines of text, and give the user a link to "Read More". The transitions are not working as expected. Can someone point out what I am doing wrong here?
+
+    #module {
+    font-size: 1rem;
+    line-height: 1.5;
+    }
+
+    #module p.collapse[aria-expanded="false"] {
+    display: block;
+    height: 3rem !important;
+    overflow: hidden;
+    }
+
+    #module p.collapse.show[aria-expanded="false"] {
+    height: 3rem !important;
+    }
+
+    #module a.collapsed:after {
+    content: '+ Show More';
+    }
+
+    #module a:not(.collapsed):after {
+    content: '- Show Less';
+    }
+    <div id="module" class="container">
+        <h3>Bacon Ipsum</h3>
+        <p class="collapse" id="collapseExample" aria-expanded="false">
+            Bacon ipsum dolor amet doner picanha tri-tip biltong leberkas salami meatball tongue filet mignon landjaeger tail. Kielbasa salami tenderloin picanha spare ribs, beef ribs strip steak jerky cow. Pork chop chicken ham hock beef ribs turkey jerky. Shoulder
+            beef capicola doner, tongue tail sausage short ribs andouille. Rump frankfurter landjaeger t-bone, kielbasa doner ham hock shankle venison. Cupim capicola kielbasa t-bone, ball tip chicken andouille venison pork chop doner bacon beef ribs kevin shankle.
+            Short loin leberkas tenderloin ground round shank, brisket strip steak ham hock ham.
+        </p>
+        <a role="button" class="collapsed" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        </a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>

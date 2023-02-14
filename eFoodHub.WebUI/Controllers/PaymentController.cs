@@ -114,7 +114,7 @@ namespace eFoodHub.WebUI.Controllers
             {
 
             }
-            ViewBag.Message = "Your payment has been failed. You can contact us at support@dotnettricks.com.";
+            ViewBag.Message = "Your payment has been failed. You can contact us at support@eFoodHub.com.";
             return View();
         }
 

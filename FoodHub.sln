@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eFoodHub.Entities", "eFoodHub.Entities\eFoodHub.Entities.csproj", "{8CD73CC0-6665-476A-8F62-1F160CDA9778}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eFoodHub.Entities", "eFoodHub.Entities\eFoodHub.Entities.csproj", "{8CD73CC0-6665-476A-8F62-1F160CDA9778}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eFoodHub.Repositories", "eFoodHub.Repositories\eFoodHub.Repositories.csproj", "{4C6F8E61-1A28-437D-807E-DE41711FE8FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eFoodHub.Repositories", "eFoodHub.Repositories\eFoodHub.Repositories.csproj", "{4C6F8E61-1A28-437D-807E-DE41711FE8FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eFoodHub.Services", "eFoodHub.Services\eFoodHub.Services.csproj", "{F1BBC5C4-D9DD-4129-8E0C-61892C260DE8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eFoodHub.Services", "eFoodHub.Services\eFoodHub.Services.csproj", "{F1BBC5C4-D9DD-4129-8E0C-61892C260DE8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eFoodHub.WebUI", "eFoodHub.WebUI\eFoodHub.WebUI.csproj", "{17188D18-5212-4A67-9489-FFADDA286411}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eFoodHub.WebUI", "eFoodHub.WebUI\eFoodHub.WebUI.csproj", "{17188D18-5212-4A67-9489-FFADDA286411}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -48,8 +48,40 @@
                     <img src="@item.ImageUrl" class="w-75" />
                 </td>
                 <td>
-                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.Id, url= item.ImageUrl })
+                    <style>
+                        .button-container {
+                            display: flex;
+                            justify-content: flex-end;
+                        }
+                        .edit-button {
+                            
+                            background-color: blue;
+                            color: white;
+                            padding: 10px 20px;
+                            border: none;
+                            border-radius: 5px;
+                            text-decoration: none;
+                            cursor: pointer;
+                            float: right;
+                            margin-left: 10px;
+                        }
+
+                        .delete-button {
+                            background-color: red;
+                            color: white;
+                            padding: 10px 20px;
+                            border: none;
+                            border-radius: 5px;
+                            text-decoration: none;
+                            cursor: pointer;
+                            float: right;
+                            margin-right: 10px;
+                        }
+                    </style>
+                    <div class="button-container">
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Id },new { @class = "edit-button" }) 
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id, url= item.ImageUrl },new { @class = "delete-button" })
+                    </div>
                 </td>
             </tr>
         }
