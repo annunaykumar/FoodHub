@@ -3,6 +3,10 @@
 @{
     ViewData["Title"] = "Login";
 }
+@*@if(TempData["success"] != null)
+{
+    <h3>@TempData["success"]</h3>
+}*@
 
 <h1>Login</h1>
 <hr />
@@ -24,6 +28,17 @@
                 <input type="submit" value="Login" class="btn btn-primary" />
                 &nbsp; <a asp-action="SignUp" class="btn btn-warning">SignUp</a>
             </div>
+
         </form>
     </div>
 </div>
+@if (TempData["success"] != null)
+{
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>@TempData["success"]</h3>
+            </div>
+        </div>
+    </div>
+}
