@@ -64,7 +64,7 @@ namespace eFoodHub.WebUI.Controllers
                 bool result = _authService.CreateUser(user, model.Password);
                 if (result)
                 {
-                    TempData["success"] = "User register successfully";
+                    TempData["success"] = "User register Successfully";
                     return RedirectToAction("Login");
                 }
             }
